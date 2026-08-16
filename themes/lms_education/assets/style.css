@@ -1,72 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<link href="https://www.blogger.com/static/v1/widgets/4165133002-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="blogger" name="generator"/>
-<link href="https://lms-education.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="https://lms-education.blogspot.com/" rel="canonical"/>
-<link href="https://lms-education.blogspot.com/feeds/posts/default" rel="alternate" title="LMS Education - Atom" type="application/atom+xml"/>
-<link href="https://lms-education.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="LMS Education - RSS" type="application/rss+xml"/>
-<link href="https://www.blogger.com/feeds/3339028285713383606/posts/default" rel="service.post" title="LMS Education - Atom" type="application/atom+xml"/>
-<link href="https://www.blogger.com/profile/11448038113626124391" rel="me"/>
-<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
-<meta content="https://lms-education.blogspot.com/" property="og:url"/>
-<meta content="LMS Education" property="og:title"/>
-<meta content="BTemplates, the best place for Blogger templates." property="og:description"/>
-<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
-<title>LMS Education</title>
-<link href="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"/>
-<style id="page-skin-1" type="text/css"><!--
 /*
-/* **************************
-Template name: LMS Education Pro
-Template url: https://btemplates.com/2020/blogger-template-lms-education/
-Designed by: https://btemplates.com/
-Distributed by: https://btemplates.com/
-Documentation: https://btemplates.com/blog/lms-education-template/
-Realise date: 01/06/2020
-CSS Framework: Bootstrap 5.3 https://getbootstrap.com/
+ 
+ /* **************************
+ Template name: LMS Education Free
+ Template url: https://btemplates.com/2020/blogger-template-lms-education/
+ Ported by: https://rivieramaya.mx & https://ixibanyayu.com/
+ Designed by: https://btemplates.com/
+ Distributed by: https://btemplates.com/
+ Documentation: https://btemplates.com/blog/lms-education-template/
+ Realise date: 01/06/2020
+ License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+ License url: http://creativecommons.org/licenses/by-nc-nd/4.0/
+ CSS Framework: Bootstrap 5.3 https://getbootstrap.com/
 Version: 1.0.8
 *****************************
+
 *//* Variable definitions
-====================
-<Variable name="bgcolor" description="Page Background Color"
-type="color" default="#fff">
-<Variable name="textcolor" description="Text Color"
-type="color" default="#212529">
-<Variable name="linkcolor" description="Link Color"
-type="color" default="#333">
-<Variable name="hoverlinkcolor" description="Hover Link Color"
-type="color" default="#D8815F">
-<Variable name="pagetitlecolor" description="Blog Title Color"
-type="color" default="#212529">
-<Variable name="descriptioncolor" description="Blog Description Color"
-type="color" default="#212529">
-<Variable name="titlecolor" description="Post Title Color"
-type="color" default="#343a40">
-<Variable name="bodyfont" description="Text Font"
-type="font" default="normal normal 100% 'Rubik', sans-serif">
+   ====================
+   <Variable name="bgcolor" description="Page Background Color"
+             type="color" default="#fff" value="#ffffff">
+   <Variable name="textcolor" description="Text Color"
+             type="color" default="#212529" value="#212529">
+   <Variable name="linkcolor" description="Link Color"
+             type="color" default="#333" value="#333333">
+   <Variable name="hoverlinkcolor" description="Hover Link Color"
+             type="color" default="#D8815F" value="#D8815F">
+   <Variable name="pagetitlecolor" description="Blog Title Color"
+             type="color" default="#212529" value="#212529">
+   <Variable name="descriptioncolor" description="Blog Description Color"
+             type="color" default="#212529" value="#212529">
+   <Variable name="titlecolor" description="Post Title Color"
+             type="color" default="#343a40" value="#343a40">
+   <Variable name="bodyfont" description="Text Font"
+             type="font" default="normal normal 100% 'Rubik', sans-serif" value="normal normal 100% &#39;Rubik&#39;, sans-serif">
 */
+
 body {
-font: normal normal 100% 'Rubik', sans-serif;
-background-color: #ffffff;
-color: #212529;
+    font: $bodyfont;
+    background-color: $bgcolor;
+    color: $textcolor;
 }
 a {
-color: #333333;
+    color: $linkcolor;
 }
 a:hover {
-color: #D8815F;
+    color: $hoverlinkcolor;
 }
 p.description {
-color: #212529;
+    color: $descriptioncolor;
 }
 #header-wrapper h1, #header-wrapper h1 a {
-color: #212529;
+    color: $pagetitlecolor;
 }
 .post-title a {
-color: #343a40;
+    color: $titlecolor;
 }
 #testimonials .carousel-control-next-icon {
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e") !important;
@@ -74,130 +60,125 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 #testimonials .carousel-control-prev-icon {
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23666' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e") !important;
 }
-#settings #Image76 {
-display: none;
-}
-body#layout #settings #Image76 {
-display: block;
-}
+
+
 /* Gadgets panel */
 body#layout {
-max-width: 1000px;
+    max-width: 1000px;
 }
 body#layout .widget .editlink {
-background-color: #999;
-color: #000;
+    background-color: #999;
+    color: #000;
 }
 body#layout .layout-widget-description {
-display: none;
+    display: none;
 }
 body#layout .add_widget {
-padding: 0;
+    padding: 0;
 }
 body#layout #bt-labels, body#layout #btemplates-search {
-display: none;
+    display: none;
 }
 body#layout #topMenu, body#layout #logoImage {
-float: left;
-width: 45%;
+    float: left;
+    width: 45%;
 }
 body#layout #SocialNetworks, body#layout #MainMenu {
-float: right;
-width: 45%;
+    float: right;
+    width: 45%;
 }
 body#layout #btemplates-main-menu {
-clear: both;
+    clear: both;
 }
 body#layout #header-wrapper {
-height: auto;
+    height: auto;
 }
 body#layout #btemplates-main-content {
-margin-top: auto;
+    margin-top: auto;
 }
 body#layout #content-wrapper {
-float: left;
-width: 67%;
+    float: left;
+    width: 67%;
 }
 body#layout #sidebar-wrapper {
-float: right;
-width: 30%;
+    float: right;
+    width: 30%;
 }
 body#layout #footers .section {
-width: 30%;
-float:left;
+    width: 30%;
+    float:left;
 }
 body#layout #blocksMainMenu, body#layout #content-1 .Image, body#layout #bt-subscription .Image, body#layout #bt-videos .Image {
-display: block;
+    display: block;
 }
 body#layout #btemplates-dropdown-2::before {
-content: "Template documentation at: https://btemplates.com/blog/lms-education-template/";
+    content: "Template documentation at: https://btemplates.com/blog/lms-education-template/";
 }
 body#layout #LinkList67::before {
-content: "Here you can add info like email, phone number or location:";
+    content: "Here you can add info like email, phone number or location:";
 }
 body#layout #LinkList68::before {
-content: "Add your social networks here. Your links will be changed for icons automatically:";
+    content: "Add your social networks here. Your links will be changed for icons automatically:";
 }
 body#layout #LinkList78::before {
-content: "Main menu with dropdown items support:";
+    content: "Main menu with dropdown items support:";
 }
 body#layout #Image97::before {
-content: "Add your logo here:";
+    content: "Add your logo here:";
 }
 body#layout #Header1::before {
-content: "Edit blog title/logo and description here:";
+    content: "Edit blog title/logo and description here:";
 }
 body#layout #Image98::before {
-content: "You can change the header background image here:";
-}
-body#layout #Image76::before {
-content: "Upload a white/light version of your logo for dark mode:";
+    content: "You can change the header background image here:";
 }
 body#layout #LinkList63::before {
-content: "Edit/add items for the Blocks menu in the home page here:";
+    content: "Edit/add items for the Blocks menu in the home page here:";
 }
 body#layout #HTML49::before {
-content: "List of latest posts or by Label. Check the documentation to add your own content:";
+    content: "List of latest posts or by Label. Check the documentation to add your own content:";
 }
 body#layout #Image91::before {
-content: "You can change the Labels section background image here:";
+    content: "You can change the Labels section background image here:";
 }
 body#layout #Label3::before {
-content: "Select Labels to display here:";
+    content: "Select Labels to display here:";
 }
 body#layout #HTML59::before {
-content: "List of posts to show profiles/testimonials:";
+    content: "List of posts to show profiles/testimonials:";
 }
 body#layout #Image93::before {
-content: "You can change the Search Form section background image here:";
+    content: "You can change the Search Form section background image here:";
+}
 body#layout #HTML79::before {
-content: "List of latest post or by Label. Check the documentation to add your own content:";
+    content: "List of latest post or by Label. Check the documentation to add your own content:";
 }
 body#layout #Image89::before {
-content: "You can change the Video section background image here:";
+    content: "You can change the Video section background image here:";
 }
 body#layout #HTML96::before {
-content: "Settings for the Video section in the home page:";
+    content: "Settings for the Video section in the home page:";
 }
 body#layout #ContactForm1::before {
-content: "Contact form in the home page settings:";
+    content: "Contact form in the home page settings:";
 }
 body#layout #HTML98::before {
-content: "List of latest posts or by Label as gallery. Check the documentation to add your own content:";
+    content: "List of latest posts or by Label as gallery. Check the documentation to add your own content:";
 }
 body#layout #footers::after {
-content: "Thank you for using LMS Education Pro template by BTemplates.com";
+    content: "Thank you for using LMS Education template by BTemplates.com";
 }
 body#layout #content-wrapper {
-margin: 0;
+    margin: 0;
 }
 body#layout #header-wrapper .Image {display: block;}
 body#layout #footer-wrapper .links, body#layout #search {
-display:none;
+    display:none;
 }
 
---></style>
-<style type="text/css">
+
+
+
             /* GENERAL STYLES */
 
             /* Hide top navbar */
@@ -222,7 +203,7 @@ display:none;
                 border-left: 10px solid #86e8e8;
                 margin: 1.5em 10px;
                 padding: 0.5em 10px;
-                quotes: '\201C''\201D''\2018''\2019';
+                quotes: &#39;\201C&#39;&#39;\201D&#39;&#39;\2018&#39;&#39;\2019&#39;;
             }
             blockquote:before {
                 color: #86e8e8;
@@ -239,7 +220,7 @@ display:none;
                 clear:both;
             }
             .clearfix:after {
-                clear:both;content:'.';
+                clear:both;content:&#39;.&#39;;
                 display:block;
                 visibility:hidden;
                 height:0;
@@ -263,7 +244,6 @@ display:none;
                 width: 100%;
             }
             #header-bg-1 {
-                background-color: #fff;
                 background-image: url(https://2.bp.blogspot.com/-7Wj-vIgtneY/XS4uM_rIBcI/AAAAAAAABOk/EhbQjIgf6Rg-aJRTUaia8OmxLBlKOSGMwCLcBGAs/s1600/header-left.png);
                 background-repeat: no-repeat;
                 background-size: auto 100%;
@@ -281,7 +261,7 @@ display:none;
                 position: relative;
             }
             #header-wrapper h1, #header-wrapper h1 a {
-                content: ' ';
+                content: &#39; &#39;;
                 display: block;
                 padding: 1rem;
                 border-radius: 5px;
@@ -297,14 +277,14 @@ display:none;
                 text-decoration: none;
             }
             #header-wrapper h1 a:hover:after, .status-msg-body b:after {
-                content: '';
+                content: &#39;&#39;;
                 position: absolute;
                 bottom: -0.125rem;
                 left: -0.5rem;
                 right: -0.5rem;
                 height: 0.75rem;
                 z-index: -1;
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 15.6'%3E%3Cstyle%3E .st0{fill:%23f3bc34} %3C/style%3E%3Cpath class='st0' d='M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z'/%3E%3Cpath class='st0' d='M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z'/%3E%3Cpath class='st0' d='M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z'/%3E%3C/svg%3E");
+                background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg id=&#39;Layer_1&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 260 15.6&#39;%3E%3Cstyle%3E .st0{fill:%23f3bc34} %3C/style%3E%3Cpath class=&#39;st0&#39; d=&#39;M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z&#39;/%3E%3Cpath class=&#39;st0&#39; d=&#39;M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z&#39;/%3E%3Cpath class=&#39;st0&#39; d=&#39;M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z&#39;/%3E%3C/svg%3E&quot;);
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -357,10 +337,10 @@ display:none;
             #btemplates-main-menu .nav-item a {
                 color: rgb(17, 70, 105);
             }
-            #btemplates-main-menu .nav-item > a {
+            #btemplates-main-menu .nav-item &gt; a {
                 color: #111;
             }
-            #btemplates-main-menu .nav-item > a:hover {
+            #btemplates-main-menu .nav-item &gt; a:hover {
                 color: #555;
             }
             #btemplates-main-menu .nav-item:last-child a {
@@ -372,13 +352,13 @@ display:none;
             #btemplates-main-menu h2 {
                 display: none;
             }
-            .dropdown-submenu>a:after {
-                content: "\F285";
+            .dropdown-submenu&gt;a:after {
+                content: &quot;\F285&quot;;
                 border: none;
-                font-family: 'bootstrap-icons';
+                font-family: &#39;bootstrap-icons&#39;;
                 vertical-align: middle;
             }
-            .dropdown-submenu>.dropdown-menu {
+            .dropdown-submenu&gt;.dropdown-menu {
                 top: 0;
                 left: 100%;
                 padding-left: 0.5rem;
@@ -534,10 +514,10 @@ display:none;
             #btemplates-search h2 {
 
             }
-            #btemplates-search input[type='text'] {
+            #btemplates-search input[type=&#39;text&#39;] {
                 padding: 0.5rem;
             }
-            #btemplates-search input[type='submit'] {
+            #btemplates-search input[type=&#39;submit&#39;] {
                 background-color: #43e8d8;
                 border: 0;
                 border-radius: 0.25rem;
@@ -576,14 +556,14 @@ display:none;
             #bt-subscription .bt-widget-description {
                 color: #fff;
             }
-            #bt-subscription input[type='text'] {
+            #bt-subscription input[type=&#39;text&#39;] {
                 padding: 0.75rem;
                 font-size: 1rem;
                 height: auto;
                 width: inherit;
                 border: 1px solid #ced4da;
             }
-            #bt-subscription input[type='submit'] {
+            #bt-subscription input[type=&#39;submit&#39;] {
                 font-size: 1rem;
                 padding: 0.75rem;
                 width: auto;
@@ -655,13 +635,13 @@ display:none;
                 width: 90%;
                 text-align: left;
             }
-            #bt-contact input[type="text"] {
+            #bt-contact input[type=&quot;text&quot;] {
                 padding: 0.75rem;
                 font-size: 1rem;
                 height: auto;
                 margin: 0;
             }
-            #bt-contact input[type="button"] {
+            #bt-contact input[type=&quot;button&quot;] {
                 font-size: 1rem;
                 padding: 0.75rem;
                 height: auto;
@@ -675,10 +655,10 @@ display:none;
             #btemplates-dropdown-2 ul {
                 margin-right: auto;
             }
-            #btemplates-dropdown-2 .nav-item > a {
+            #btemplates-dropdown-2 .nav-item &gt; a {
 
             }
-            #btemplates-dropdown-2 .nav-item > a:hover {
+            #btemplates-dropdown-2 .nav-item &gt; a:hover {
 
             }
             #btemplates-social a.nav-link{
@@ -798,7 +778,7 @@ display:none;
             .post-header-line-1 .post-author:hover .rounded-circle {
                 border-color: rgb(66, 203, 219) !important;
             }
-            .post-header-line-1 > span {
+            .post-header-line-1 &gt; span {
                 margin: 0 0.5rem;
             }
             .post-header-line-1 .rounded-circle {
@@ -815,7 +795,7 @@ display:none;
             }
             .post-body ul{list-style-type:circle;list-style-position:inside;padding:0 0 0 0.25em;}
             .post-body ol{list-style-type:decimal;list-style-position:inside;padding:0 0 0 0.25em;}
-            .post-body a, #related-post .bt-post-title a { text-decoration: underline; color: rgb(17, 70, 105); }
+            .post-body a { text-decoration: underline; color: rgb(17, 70, 105); }
             .post-body a:hover { color: rgb(31, 92, 132); }
             .post-body a img: hover {
                 border: 1px solid #999;
@@ -870,23 +850,23 @@ display:none;
             .bt-post-share-buttons a:hover i {
                 font-size: 125%;
             }
-            .bt-post-share-buttons a[href$="email"] {
+            .bt-post-share-buttons a[href$=&quot;email&quot;] {
                 border-color: rgb(240, 188, 13);
                 color: rgb(240, 188, 13);
             }
-            .bt-post-share-buttons a[href$="facebook"] {
+            .bt-post-share-buttons a[href$=&quot;facebook&quot;] {
                 border-color: #3b5998;
                 color: #3b5998;
             }
-            .bt-post-share-buttons a[href$="twitter"] {
+            .bt-post-share-buttons a[href$=&quot;twitter&quot;] {
                 border-color: #55acee;
                 color: #55acee;
             }
-            .bt-post-share-buttons a[href$="pinterest"] {
+            .bt-post-share-buttons a[href$=&quot;pinterest&quot;] {
                 border-color: #CB2125;
                 color: #CB2125;
             }
-            .bt-post-share-buttons a[href$="tools.html"] {
+            .bt-post-share-buttons a[href$=&quot;tools.html&quot;] {
                 border-color: #28AE00;
                 color: #28AE00;
             }
@@ -901,71 +881,29 @@ display:none;
                 transition: box-shadow 1s;
             }
             #btemplates-author-box:hover {
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 0 50px .1px #CFDEEA;
             }
             #btemplates-author-box img.rounded-circle{
                 width: 75px;
                 height: 75px;
             }
-            #btemplates-author-box a[rel='author'] {
+            #btemplates-author-box a[rel=&#39;author&#39;] {
                 font-weight: bold;
                 font-size: 1.25rem;
                 margin-bottom: 0.75rem;
                 display: block;
             }
-            #btemplates-author-box span[itemprop='description'] {
+            #btemplates-author-box span[itemprop=&#39;description&#39;] {
                 color: #444;
-            }
-            #related-post {
-                margin-top: 1.5rem;
-                width: 100%;
-            }
-            #related-post h3 {
-                margin-bottom: 1.5rem;
-            }
-            #related-post .btemplates-post{
-                width: 100%;
-                clear: both;
-                padding-bottom: 1.25rem;
-            }
-            #related-post .bt-post-thumbnail, #blog-pager .bt-post-thumbnail {
-                width: 30%;
-                height: 50px;
-                overflow: hidden;
-                float: left;
-                padding-right: 1rem;
-            }
-            #related-post .bt-post-thumbnail img, #blog-pager .bt-post-thumbnail img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 1.5s cubic-bezier(0, 0, .3, 1);
-            }
-            #related-post .btemplates-post:hover .bt-post-thumbnail img, #blog-pager .btemplates-post:hover .bt-post-thumbnail img {
-                transform: scale3d(1.1, 1.1, 1.1);
-            }
-            #related-post .bt-post-title a{
-                transition: color 1s;
-                text-decoration: none;
-                display: block;
-                text-align: center;
-            }
-            #related-post .bt-post-content{
-                display: none;
-            }
-            #related-post .bt-post-date{
-                font-size: 80%;
-                color: #999;
-                display: none;
             }
             #blog-pager {
                 margin-bottom: 1.5rem;
             }
             #blog-pager .btemplates-post:first-child::before {
-                content: ' Newer post';
+                content: &#39; Newer post&#39;;
             }
             #blog-pager .btemplates-post:last-child::before {
-                content: 'Older post >';
+                content: &#39;Older post &gt;&#39;;
             }
             #blog-pager .bt-post-thumbnail {
                 width: 100%;
@@ -984,15 +922,15 @@ display:none;
                 color: #999;
             }
             .home-link::before {
-                content: '\00a0\f424';
+                content: &#39;\00a0\f424&#39;;
                 font-family: 'bootstrap-icons';
             }
             .blog-pager-older-link::after {
-                content: '\00a0\f285';
+                content: &#39;\00a0\f285&#39;;
                 font-family: 'bootstrap-icons';
             }
             .blog-pager-newer-link::before {
-                content: '\f284\00a0';
+                content: &#39;\f284\00a0&#39;;
                 font-family: 'bootstrap-icons';
             }
             .status-msg-wrap {
@@ -1085,7 +1023,7 @@ display:none;
                 padding: 0 0.5em 0 0.3em;
             }
             .Profile li:before {
-                content: '\f4da';
+                content: &#39;\f4da&#39;;
                 font-family: 'bootstrap-icons';
             }
             .Profile li {
@@ -1095,7 +1033,7 @@ display:none;
                 background-image: none !important;
                 font-size: 1.1em;
             }
-            .Profile > div:nth-child(2) > a:nth-child(1) img {
+            .Profile &gt; div:nth-child(2) &gt; a:nth-child(1) img {
                 display:block;
                 float:none;
                 margin: 0.5em auto;
@@ -1607,14 +1545,14 @@ display:none;
             }
             .Label li::before {
             }
-            .Label span[dir='ltr'] {
+            .Label span[dir=&#39;ltr&#39;] {
                 width: 1.5em;
                 height: 1.5em;
             }
             .ContactForm input, .ContactForm textarea {
                 max-width: 100%;
             }
-            .ContactForm input[type='button'] {
+            .ContactForm input[type=&#39;button&#39;] {
                 width: 100%;
                 background-color: #43e8d8;
                 color: #fff;
@@ -1630,7 +1568,7 @@ display:none;
                 list-style: none;
             }
             .Feed li::before {
-                content: '\f280  ';
+                content: &#39;\f280  &#39;;
                 font-family: 'bootstrap-icons';
             }
             .Feed .item-date {
@@ -1689,7 +1627,7 @@ display:none;
             #top-ra {
                 margin-bottom: 2em;
             }
-            #top-ra > .comment {
+            #top-ra &gt; .comment {
                 border: 1px solid #dee2e6;
                 margin: 0 0 1em;
                 padding: 1em;
@@ -1777,7 +1715,7 @@ display:none;
                 left: 0;
                 right: 0;
                 bottom: 0;
-                content: '';
+                content: &#39;&#39;;
                 background: #000;
                 opacity: 0;
                 z-index: 1;
@@ -1930,23 +1868,11 @@ display:none;
                 #testimonials .bt-post-content {
                     font-size: 1.25rem;
                 }
-                #bt-subscription input[type="text"] {
+                #bt-subscription input[type=&quot;text&quot;] {
                     width: auto;
                 }
                 #bt-subscription .input-group > .input-group-text:first-child {
                     display: flex;
-                }
-                #related-post .btemplates-post{
-                    float: left;
-                    width: 33%;
-                    clear: none;
-                    padding-bottom: 0;
-                }
-                #related-post .bt-post-thumbnail{
-                    width: 100%;
-                    height: 140px;
-                    overflow: hidden;
-                    float: none;
                 }
                 #btemplates-author-box img.rounded-circle{
                     width: 120px;
@@ -2002,531 +1928,21 @@ display:none;
                 }
             }
 
-            [data-bs-theme="dark"] body {
-                background-color: #212529;
-                color: #dee2e6;
-            }
-            [data-bs-theme="dark"] a {
-                color: #a0c4ff;
-            }
-            [data-bs-theme="dark"] .post-title a {
-                color: #eee !important;
-            }
-            [data-bs-theme="dark"] #Header1 p.description {
-                color: #212529;
-            }
-            [data-bs-theme="dark"] #btemplates-dropdown-2 {
-                background-color: #343a40;
-            }
-            [data-bs-theme="dark"] .breadcrumb, [data-bs-theme="dark"] .status-msg-bg {
-                background-color: #343a40;
-            }
-            [data-bs-theme="dark"] .status-msg-wrap {
-                background-color: #343a40;
-            }
-            [data-bs-theme="dark"] .sticky {
-                background-color: #2b3035 !important;
-            }
-            [data-bs-theme="dark"] #btemplates-main-menu {
-                background-color: #2b3035;
-            }
-            [data-bs-theme="dark"] #btemplates-main-menu .nav-item a {
-                color: #a0c4ff;
-            }
-            [data-bs-theme="dark"] #btemplates-main-menu .nav-item > a {
-                color: #ddd;
-            }
-            [data-bs-theme="dark"] #btemplates-main-menu .nav-item > a:hover {
-                color: #fff;
-            }
-            [data-bs-theme="dark"] .post-header-line-1,
-            [data-bs-theme="dark"] .post-header-line-1 a {
-                color: #999;
-            }
-            [data-bs-theme="dark"] .post-body a {
-                color: #a0c4ff;
-            }
-            [data-bs-theme="dark"] .post-body blockquote {
-                background-color: #1a2a2a;
-                color: #ccc;
-            }
-            [data-bs-theme="dark"] .bt-post-share-buttons a {
-                color: #999;
-            }
-            [data-bs-theme="dark"] #sidebar-wrapper .widget h2 {
-                color: #eee;
-            }
-            [data-bs-theme="dark"] #sidebar-icons a {
-                color: #aaa;
-            }
-            [data-bs-theme="dark"] #bt-posts-1 h2,
-            [data-bs-theme="dark"] #testimonials h2,
-            [data-bs-theme="dark"] #bt-blog h2,
-            [data-bs-theme="dark"] #bt-videos h2,
-            [data-bs-theme="dark"] #bt-videos h3,
-            [data-bs-theme="dark"] #bt-videos .bt-post-content,
-            [data-bs-theme="dark"] #bt-contact h2,
-            [data-bs-theme="dark"] #bt-contact .bt-widget-description {
-                color: #dee2e6;
-            }
-            [data-bs-theme="dark"] hr.subtitle-separator {
-                border-color: #333;
-            }
-            [data-bs-theme="dark"] .bt-post-date,
-            [data-bs-theme="dark"] .bt-comment-date a {
-                color: #aaa;
-            }
-            [data-bs-theme="dark"] #blog-pager a {
-                color: #a0c4ff;
-            }
-            [data-bs-theme="dark"] #bt-posts-1 .btemplates-post,
-            [data-bs-theme="dark"] #bt-blog .btemplates-post {
-                border-color: #333;
-            }
-            [data-bs-theme="dark"] .post table td,
-            [data-bs-theme="dark"] .post table th {
-                border-color: #333;
-            }
-            [data-bs-theme="dark"] .post .posts-list-tag li {
-                border-color: #333;
-            }
-            [data-bs-theme="dark"] .dropdown-menu {
-                box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            }
-            [data-bs-theme="dark"] .btemplates-tags a img {
-                border-color: #555;
-            }
-            [data-bs-theme="dark"] #btemplates-main-content {
-                background-color: transparent;
-            }
-            [data-bs-theme="dark"] #secondary-menu a {
-                color: #ddd;
-            }
-            [data-bs-theme="dark"] #btemplates-dropdown-2 .bi {
-                color: #aaa;
-            }
-            [data-bs-theme="dark"] #bt-posts-1 {
-                color: #aaa;
-            }
-            [data-bs-theme="dark"] .bt-post-share-buttons a {
-                border-color: #555;
-            }
-            [data-bs-theme="dark"] #sidebar input[type=submit] {
-                color: #fff;
-            }
-            [data-bs-theme="dark"] #btemplates-author-box a[rel='author'] {
-                color: #dee2e6;
-            }
-            [data-bs-theme="dark"] #btemplates-author-box span[itemprop='description'] {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] #btemplates-author-box:hover {
-                box-shadow: 0 0 20px rgba(160, 196, 255, 0.15);
-            }
-            [data-bs-theme="dark"] #comments h4 {
-                color: #dee2e6;
-            }
-            [data-bs-theme="dark"] #main-wrapper .BlogSearch {
-                background-color: transparent;
-            }
-            [data-bs-theme="dark"] .bt-widget-description {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] .popular-post-title a {
-                color: #dee2e6;
-            }
-            [data-bs-theme="dark"] .Feed .item-date {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] #related-post .bt-post-date {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] a:visited {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] .post-body a:hover {
-                color: #c0d8ff;
-            }
-            [data-bs-theme="dark"] #bt-posts-1 .bt-post-date,
-            [data-bs-theme="dark"] #sidebar .bt-post-date,
-            [data-bs-theme="dark"] #footers .bt-post-date {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] #testimonials .bt-post-location {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] #testimonials .carousel-control-next-icon {
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e") !important;
-            }
-            [data-bs-theme="dark"] #testimonials .carousel-control-prev-icon {
-                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e") !important;
-            }
-            [data-bs-theme="dark"] #related-post .bt-post-title a {
-                color: #a0c4ff;
-            }
-            [data-bs-theme="dark"] .comments .comments-content .datetime a {
-                color: #adb5bd;
-            }
-            [data-bs-theme="dark"] #main-wrapper .BlogSearch h2 {
-                border-bottom-color: #444;
-            }
-            [data-bs-theme="dark"] #footers .bi, [data-bs-theme="dark"] #sidebar .bi {
-                background-color: #343a40;
-            }
-            [data-bs-theme="dark"] #back-top {
-                background-color: #343a40;
-            }
-            [data-bs-theme="dark"] #bt-posts-1 .btemplates-post:hover,
-            [data-bs-theme="dark"] #bt-blog .btemplates-post:hover {
-                background-color: transparent;
-                box-shadow: 0 0 20px rgba(160, 196, 255, 0.15);
-            }
+        
 
-        </style>
-<link href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap" rel="stylesheet"/>
-<link href="https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3339028285713383606&amp;zx=d1ca2484-d796-4f32-bb08-7a9385b1347d" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/><noscript><link href="https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3339028285713383606&amp;zx=d1ca2484-d796-4f32-bb08-7a9385b1347d" rel="stylesheet"/></noscript>
-<meta content="ca-host-pub-1556223355139109" name="google-adsense-platform-account"/>
-<meta content="blogspot.com" name="google-adsense-platform-domain"/>
-</head>
-<body>
-    <div class="container-fluid btemplates-dropdown" id="btemplates-dropdown-2">
-<!-- Menu Link -->
-<div class="d-flex justify-content-between">
-<nav class="navbar navbar-expand-lg navbar-light d-none py-0">
-<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#topMenu" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="crosscol collapse navbar-collapse section" id="topMenu" name="Top Menu"><div class="widget LinkList" data-version="1" id="LinkList67">
-<h2>Top Links Menu</h2>
-<div class="widget-content">
-<ul>
-<li><a href="tel:+1-687-6895465">+1-687-6895465</a></li>
-<li><a href="mailto:email@example.com">email@example.com</a></li>
-<li><a href="https://www.google.com/maps/place/Playa+del+Carmen,+Quintana+Roo,+Mexico/@20.6537884,-87.1068017,13z/data=!3m1!4b1!4m5!3m4!1s0x8f4e4323d22d4e61:0xe8c10b783bab4adc!8m2!3d20.6295586!4d-87.0738851">5th av, Playa del Carmen, Mexico</a></li>
-</ul>
-<div class="clear"></div>
-</div>
-</div></div>
-</nav>
-<div class="navbar-simple d-none" id="btemplates-social">
-<div class="section" id="SocialNetworks" name="Social media icons"><div class="widget LinkList" data-version="1" id="LinkList68">
-<h2>Top Links Menu</h2>
-<div class="widget-content">
-<ul>
-<li><a href="https://instagram.com/pdcrivieramaya">Instagram</a></li>
-<li><a href="https://www.youtube.com/c/RivieramayaMx?sub_confirmation=1">YouTube</a></li>
-<li><a href="https://facebook.com/PlayaDelCarmen">Facebook</a></li>
-<li><a href="https://twitter.com/PlayaDeICarmen">Twitter</a></li>
-<li><a href="https://tiktok.com/#">Tiktok.com</a></li>
-<li><a href="https://joinmastodon.org/?mastodon=1">Mastodon</a></li>
-</ul>
-<div class="clear"></div>
-</div>
-</div></div>
-</div>
-</div>
-<!-- /Menu links -->
-</div>
-<div class="container-fluid border-bottom py-2" id="btemplates-main-menu">
-<div class="container">
-<div class="btemplates-dropdown">
-<nav class="navbar navbar-light navbar-expand-lg d-none pe-0">
-<div class="align-self-center">
-<div class="section" id="logoImage" name="Site Logo"><div class="widget Image" data-version="1" id="Image97">
-<h2>Logo</h2>
-<div class="widget-content">
-<a href="#bt-home">
-<img alt="Logo" height="28" id="Image97_img" src="//3.bp.blogspot.com/-IrT6CQzskHs/XS1zK48cBoI/AAAAAAAABNs/2oVf4iioXMMI2BFd3L9CYTXYBiz1yefwACK4BGAYYCw/s1600/logo.png" width="197"/>
-</a>
-<br/>
-<span class="caption">Logo Image. Ideal width 300px.</span>
-</div>
-<div class="clear"></div>
-</div></div>
-</div>
-<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#MainMenu" data-bs-toggle="collapse" type="button">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="crosscol collapse navbar-collapse justify-content-lg-end section" id="MainMenu" name="Main Menu"><div class="widget LinkList" data-version="1" id="LinkList78">
-<h2>Main Menu</h2>
-<div class="widget-content">
-<ul>
-<li><a href="#bt-home">Home</a></li>
-<li><a href="#bt_tour">Template tour</a></li>
-<li><a href="#">Drop down menu</a></li>
-<li><a href="https://rivieramaya.mx">-Riviera Maya</a></li>
-<li><a href="https://btemplates.com">-BTemplates</a></li>
-<li><a href="https://btemplates.com">--Blogger templates</a></li>
-<li><a href="https://btemplates.com/blog/">--Blog</a></li>
-<li><a href="https://blogandweb.com">-Blog and Web</a></li>
-<li><a href="https://btemplates.com/blog/">-BTemplates Blog</a></li>
-<li><a href="https://chinomandarin.com">-Chino MandarÃ­n</a></li>
-<li><a href="#">tag:Campus-5-true</a></li>
-<li><a href="https://lms-education.blogspot.com/search/label/Courses/">Courses</a></li>
-<li><a href="#">theme</a></li>
-</ul>
-<div class="clear"></div>
-</div>
-</div></div>
-</nav>
-</div>
-</div>
-</div>
-    
-    <div class='container-fluid mt-4'>
-        <div class='container' id='btemplates-main-content'>
-            <div class='row'>
-                <div class='col-lg-9' id='content-wrapper'>
-                    <div class='post-outer'>
-                        <article class='post hentry'>
-                            
-                            <div class="post-tags btemplates-tags mb-3">
-                                <a href="#" class="bt-tag">Dicas</a>
-                            </div>
-                            
-                            
-                            <h1 class='post-title entry-title'>
-                                Quais são os benefícios de um óleo nutritivo para pelos faciais?
-                            </h1>
-                            
-                            <div class='post-header mb-4 text-muted'>
-                                <span class='post-timestamp'>07/10/2025</span>
-                            </div>
-                            
-                            <div class='post-body entry-content'>
-                                
-                                <div class="separator text-center mb-4">
-                                    <img src="/static/uploads/quais-sao-os-beneficios-de-um-oleo-nutritivo-para-pelos-faciais.jpg" style="max-width: 100%; border-radius: 8px;" />
-                                </div>
-                                
-                                
-                                <p>O cuidado com os pelos faciais tem ganhado cada vez mais aten&ccedil;&atilde;o, especialmente entre os homens que desejam manter uma barba e bigode saud&aacute;veis, bem cuidados e com apar&ecirc;ncia impec&aacute;vel. Entre os produtos que se destacam nesse universo est&aacute; o <strong>&oacute;leo nutritivo para pelos faciais</strong>, um aliado poderoso para quem busca n&atilde;o apenas estilo, mas tamb&eacute;m sa&uacute;de e conforto para a pele e os pelos.</p>
-<p>Neste conte&uacute;do, ser&atilde;o apresentados os principais benef&iacute;cios desse tipo de &oacute;leo, suas fun&ccedil;&otilde;es e motivos pelos quais ele deve fazer parte da rotina de cuidados di&aacute;rios. Al&eacute;m disso, ser&atilde;o abordadas dicas para a aplica&ccedil;&atilde;o correta e informa&ccedil;&otilde;es essenciais para escolher o produto ideal.</p>
-<h2>O Que &Eacute; Um &Oacute;leo Nutritivo Para Pelos Faciais?</h2>
-<p>Um <strong>&oacute;leo nutritivo para pelos faciais</strong> &eacute; uma f&oacute;rmula especialmente desenvolvida para hidratar, nutrir e proteger os pelos que crescem no rosto, como barba, bigode e at&eacute; mesmo sobrancelhas. Geralmente, esses &oacute;leos s&atilde;o compostos por ingredientes naturais, como &oacute;leos vegetais (argan, jojoba, coco, entre outros) e extratos que promovem benef&iacute;cios tanto para os pelos quanto para a pele subjacente.</p>
-<p>Ao contr&aacute;rio de cremes ou lo&ccedil;&otilde;es comuns, o &oacute;leo possui uma textura leve e de r&aacute;pida absor&ccedil;&atilde;o, que n&atilde;o deixa a pele oleosa ou pegajosa. Por isso, &eacute; ideal para quem quer um cuidado pr&aacute;tico e eficiente.</p>
-<p>---</p>
-<h2>Benef&iacute;cios Do &Oacute;leo Nutritivo Para Pelos Faciais</h2>
-<h3>1. Hidrata&ccedil;&atilde;o Profunda dos Pelos e da Pele</h3>
-<p>Um dos maiores problemas enfrentados por quem tem barba ou bigode &eacute; o ressecamento, que pode causar a sensa&ccedil;&atilde;o de pele &aacute;spera, coceira e at&eacute; descama&ccedil;&atilde;o. O uso regular do <strong>&oacute;leo nutritivo para pelos faciais</strong> garante uma hidrata&ccedil;&atilde;o profunda, que atinge tanto os fios quanto a pele por baixo deles.</p>
-<p>Essa hidrata&ccedil;&atilde;o evita o desconforto da pele seca e refor&ccedil;a a maciez dos pelos, tornando a barba mais alinhada e f&aacute;cil de pentear.</p>
-<h3>2. Preven&ccedil;&atilde;o e Redu&ccedil;&atilde;o da Coceira e Irrita&ccedil;&atilde;o</h3>
-<p>Durante o crescimento dos pelos, &eacute; comum que muitos homens sintam coceira e irrita&ccedil;&atilde;o na pele do rosto. Isso ocorre devido &agrave; pele ressecada e &agrave; falta de cuidados adequados. O &oacute;leo nutritivo ajuda a acalmar essas sensa&ccedil;&otilde;es, gra&ccedil;as &agrave;s suas propriedades emolientes e calmantes.</p>
-<p>Al&eacute;m disso, ao nutrir a pele, o &oacute;leo reduz a irrita&ccedil;&atilde;o causada pelo atrito dos pelos ou pelas l&acirc;minas de barbear, proporcionando mais conforto.</p>
-<h3>3. Est&iacute;mulo do Crescimento Saud&aacute;vel dos Pelos</h3>
-<p>Muitos &oacute;leos nutritivos cont&ecirc;m ingredientes que favorecem a circula&ccedil;&atilde;o sangu&iacute;nea na regi&atilde;o, estimulando o fol&iacute;culo piloso. Isso contribui para o crescimento mais saud&aacute;vel e forte dos pelos, evitando a quebra e a queda excessiva.</p>
-<p>Um dos pontos mais valorizados por quem deseja uma barba cheia &eacute; justamente utilizar produtos que auxiliem no crescimento dos fios, e o &oacute;leo nutritivo pode ser um grande aliado nesse processo.</p>
-<h3>4. Controle do Frizz e Melhora da Textura dos Pelos</h3>
-<p>Assim como os cabelos, os pelos faciais podem ficar arrepiados e com frizz, especialmente em ambientes secos ou ap&oacute;s a lavagem. O &oacute;leo nutritivo proporciona uma camada protetora que suaviza a textura dos fios, deixando-os alinhados, brilhantes e com aspecto mais saud&aacute;vel.</p>
-<p>Esse efeito melhora n&atilde;o apenas a apar&ecirc;ncia, mas tamb&eacute;m a sensa&ccedil;&atilde;o ao toque, facilitando o penteado e a manuten&ccedil;&atilde;o di&aacute;ria.</p>
-<h3>5. Prote&ccedil;&atilde;o Contra Agentes Externos</h3>
-<p>O ambiente ao redor est&aacute; repleto de agentes que podem prejudicar a sa&uacute;de dos pelos e da pele, como polui&ccedil;&atilde;o, poeira, sol e vento. O &oacute;leo nutritivo cria uma barreira protetora, minimizando os danos causados por esses elementos.</p>
-<p>Al&eacute;m disso, alguns &oacute;leos possuem propriedades antioxidantes, que ajudam a combater radicais livres e retardam o envelhecimento precoce da pele facial.</p>
-<p>---</p>
-<h2>Ingredientes Comuns E Seus Benef&iacute;cios</h2>
-<h3>&Oacute;leo de Jojoba</h3>
-<p>O &oacute;leo de jojoba &eacute; muito semelhante ao sebo natural produzido pela pele, o que facilita sua absor&ccedil;&atilde;o. Ele hidrata profundamente sem deixar a sensa&ccedil;&atilde;o oleosa, equilibra a produ&ccedil;&atilde;o de &oacute;leo da pele e ajuda a evitar a obstru&ccedil;&atilde;o dos poros.</p>
-<h3>&Oacute;leo de Argan</h3>
-<p>Conhecido como "ouro l&iacute;quido", o &oacute;leo de argan &eacute; rico em vitamina E e &aacute;cidos graxos essenciais. Ele nutre intensamente, fortalece os pelos e promove brilho natural, al&eacute;m de possuir a&ccedil;&atilde;o anti-inflamat&oacute;ria.</p>
-<h3>&Oacute;leo de Coco</h3>
-<p>O &oacute;leo de coco &eacute; altamente hidratante e possui propriedades antibacterianas, o que auxilia na preven&ccedil;&atilde;o de infec&ccedil;&otilde;es e irrita&ccedil;&otilde;es. Tamb&eacute;m ajuda a suavizar os pelos e a pele.</p>
-<h3>Vitamina E</h3>
-<p>A vitamina E &eacute; um antioxidante poderoso que protege a pele contra os danos causados pelo sol e polui&ccedil;&atilde;o, al&eacute;m de estimular a regenera&ccedil;&atilde;o celular, mantendo a pele saud&aacute;vel e revitalizada.</p>
-<p>---</p>
-<h2>Como Aplicar O &Oacute;leo Nutritivo Para Pelos Faciais Corretamente</h2>
-<p>Para garantir todos os benef&iacute;cios, &eacute; fundamental saber aplicar o &oacute;leo nutritivo de forma adequada. Confira algumas dicas essenciais:</p>
-<p>1. <strong>Limpeza Pr&eacute;via:</strong> Antes de aplicar o &oacute;leo, lave o rosto com um sabonete espec&iacute;fico para a pele do rosto ou para barba, removendo sujeiras e res&iacute;duos.</p>
-<p>2. <strong>Quantidade Ideal:</strong> Normalmente, 3 a 5 gotas s&atilde;o suficientes, dependendo do tamanho da barba. Evite exagerar para n&atilde;o deixar os pelos com apar&ecirc;ncia oleosa.</p>
-<p>3. <strong>Aquecimento do Produto:</strong> Esfregue as gotas entre as palmas das m&atilde;os para aquecer o &oacute;leo, facilitando a aplica&ccedil;&atilde;o.</p>
-<p>4. <strong>Aplica&ccedil;&atilde;o Uniforme:</strong> Massageie o &oacute;leo nos pelos faciais e na pele, fazendo movimentos circulares para garantir que o produto penetre bem.</p>
-<p>5. <strong>Penteie a Barba:</strong> Use um pente para distribuir o &oacute;leo e alinhar os fios, deixando a barba com aspecto cuidado.</p>
-<p>---</p>
-<h2>Por Que Investir Em Um &Oacute;leo Nutritivo De Qualidade?</h2>
-<p>A escolha de um <strong>&oacute;leo nutritivo para pelos faciais</strong> de boa qualidade faz toda a diferen&ccedil;a nos resultados. Produtos com ingredientes naturais, sem adi&ccedil;&atilde;o de parabenos, sulfatos ou fragr&acirc;ncias artificiais agressivas, s&atilde;o mais indicados para evitar alergias e irrita&ccedil;&otilde;es.</p>
-<p>Al&eacute;m disso, um &oacute;leo de qualidade garante efic&aacute;cia na nutri&ccedil;&atilde;o e hidrata&ccedil;&atilde;o, proporcionando benef&iacute;cios duradouros e uma experi&ecirc;ncia agrad&aacute;vel no uso di&aacute;rio.</p>
-<p>---</p>
-<h2>&Oacute;leo Para Barba: Um Produto Vers&aacute;til</h2>
-<p>Embora alguns homens usem o termo "<a href="https://reinodabarba.com.br/produtos-reviews-e-guias/melhor-oleo-para-barba/">&oacute;leo para barba</a>" para se referir a qualquer produto de cuidado, &eacute; importante entender que o &oacute;leo nutritivo &eacute; espec&iacute;fico para tratar e melhorar a sa&uacute;de dos pelos faciais. Ele pode ser utilizado em diferentes estilos e tamanhos de barba, desde barbas curtas at&eacute; as mais longas e volumosas.</p>
-<p>O uso regular desse tipo de &oacute;leo tamb&eacute;m contribui para deixar a barba com um aroma agrad&aacute;vel, pois muitos produtos contam com fragr&acirc;ncias naturais que valorizam o cuidado pessoal.</p>
-<p>---</p>
-<h2>Cuidados Complementares Para Pelos Faciais Saud&aacute;veis</h2>
-<p>Al&eacute;m do uso do &oacute;leo nutritivo, outros h&aacute;bitos s&atilde;o essenciais para manter a barba bonita e saud&aacute;vel:</p>
-<p>- <strong>Higieniza&ccedil;&atilde;o di&aacute;ria:</strong> Lave a barba com produtos espec&iacute;ficos para evitar ac&uacute;mulo de sujeira.</p>
-<p>- <strong>Hidrata&ccedil;&atilde;o da pele:</strong> Use hidratantes faciais que n&atilde;o entupam os poros.</p>
-<p>- <strong>Alimenta&ccedil;&atilde;o equilibrada:</strong> Nutrientes adequados refletem diretamente na sa&uacute;de dos pelos.</p>
-<p>- <strong>Evitar o estresse:</strong> O estresse pode afetar o crescimento capilar e a sa&uacute;de da pele.</p>
-<p>- <strong>Aparar regularmente:</strong> Manter o formato da barba com aparos frequentes evita pontas duplas e fios quebradi&ccedil;os.</p>
-<p>---</p>
-<h2>Considera&ccedil;&otilde;es Finais</h2>
-<p>O <strong>&oacute;leo nutritivo para pelos faciais</strong> &eacute; um componente fundamental para quem deseja manter a barba e demais pelos do rosto com sa&uacute;de, maciez e bom aspecto. Seus benef&iacute;cios v&atilde;o desde a hidrata&ccedil;&atilde;o e prote&ccedil;&atilde;o at&eacute; o est&iacute;mulo do crescimento saud&aacute;vel, passando pelo controle do frizz e redu&ccedil;&atilde;o da irrita&ccedil;&atilde;o.</p>
-<p>Incorporar esse produto na rotina di&aacute;ria de cuidados &eacute; investir no bem-estar da pele e dos pelos, garantindo que a barba esteja sempre bem cuidada e alinhada ao estilo pessoal.</p>
-<p>Ao escolher o &oacute;leo ideal e aplic&aacute;-lo corretamente, &eacute; poss&iacute;vel transformar a experi&ecirc;ncia do cuidado facial em um momento de prazer e autoconfian&ccedil;a, refletindo diretamente na apar&ecirc;ncia e na autoestima.</p>
-<p>---</p>
-<p><strong>Palavras-chave importantes:</strong></p>
-<p>- <strong>&oacute;leo nutritivo para pelos faciais</strong></p>
-<p>- <strong>hidrata&ccedil;&atilde;o da barba</strong></p>
-<p>- <strong>crescimento saud&aacute;vel dos pelos</strong></p>
-<p>- <strong>prote&ccedil;&atilde;o da pele facial</strong></p>
-<p>- <strong>controle do frizz na barba</strong></p>
-<p>- <strong>barba saud&aacute;vel e macia</strong></p>
-<p>Ter uma rotina de cuidados bem estruturada, com o uso de produtos adequados, permite que os pelos faciais estejam sempre em seu melhor estado, contribuindo para um visual moderno e cuidado. Afinal, a barba bem tratada &eacute; sin&ocirc;nimo de estilo e sa&uacute;de.</p>
+#btemplates-main-content > .row { flex-direction: row-reverse !important; }
+
+#sidebar-wrapper { display: none } #content-wrapper { width: 100%; }
+
+.sticky { position: fixed !important; top: 0; z-index: 900; width: 100%; background-color: #fff !important; }
+
+.post-title, #sidebar h2, .post-tags a, .btemplates-tags a, .popular-post-title, #footers h2, #post-navigation a, #related-posts h5 { text-transform: uppercase; }
+
+@media (min-width: 768px) { #bt-header { height: <data:link.target/>px; } }
+
+#blocksMainMenu .bt-block { height: auto !important; aspect-ratio: 1; }
 
 
+                                            .status-msg-wrap {display: none;}
+                                        
 
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                
-                <!-- Sidebar fake -->
-                <div class='col-lg-3' id='sidebar-wrapper'>
-                    <div class='sidebar-container'>
-                        <div class='widget HTML'>
-                            <h2 class='title'>Sobre</h2>
-                            <div class='widget-content'>
-                                Insira a descrição do seu CMS aqui.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid" id="footers">
-<div class="container">
-<div class="row py-4">
-<div class="col-md-6 col-lg-4 section" id="footer-1" name="Footer 1"><div class="widget PopularPosts" data-version="1" id="PopularPosts2">
-<h2>Popular</h2>
-<div class="widget-content popular-posts">
-<ul>
-<li>
-<div class="item-content">
-<div class="item-thumbnail">
-<a href="https://lms-education.blogspot.com/2020/06/blog-post_64.html" target="_blank">
-<img alt="" border="0" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_viJYvoRBV6aGIRppi-mdWvdrHRdwlqQJgXT5oyl12AP_zVNd-MYhxWFDlGdw5JKJj4GhZ6378je5o46IFZiHnsFXS2o_mJXo756w=w72-h72-n-k-no-nu"/>
-</a>
-</div>
-<div class="item-title"><a href="https://lms-education.blogspot.com/2020/06/blog-post_64.html">超实用！餐厅就餐必备西班牙语</a></div>
-<div class="item-snippet">
-</div>
-</div>
-<div style="clear: both;"></div>
-</li>
-<li>
-<div class="item-content">
-<div class="item-thumbnail">
-<a href="https://lms-education.blogspot.com/2019/07/open-source-best-tools.html" target="_blank">
-<img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjD0TnATC7WX3QJ4ZMd_CHNU_8c5QC4ujXdNKSLwB0wMvgBn8RMAD1mXNqwHclNB0TOWNflGQLG9S_mIv-HmEw5mAKDBVck1mf5o674LfHMfGCO-XTqqExJ3m1RHKWATdkXQ4sLuLzLXM4/w72-h72-p-k-no-nu/open-source.jpg"/>
-</a>
-</div>
-<div class="item-title"><a href="https://lms-education.blogspot.com/2019/07/open-source-best-tools.html">Open Source, the best tools.</a></div>
-<div class="item-snippet">   Open source  is a term denoting that a product includes permission to use its source code, design documents, or content. It most commonly...</div>
-</div>
-<div style="clear: both;"></div>
-</li>
-<li>
-<div class="item-content">
-<div class="item-thumbnail">
-<a href="https://lms-education.blogspot.com/2020/06/dele-c1.html" target="_blank">
-<img alt="" border="0" src="https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vnGp9COhbwF4FibWsy8UygUwkid8jBRSB4jfD8C6FNSuBqh32I9gmoNPPtTPr4A7s_6MrhTFopo1n8KISmXKqZc0ORt1fYRRqxLjc=w72-h72-n-k-no-nu"/>
-</a>
-</div>
-<div class="item-title"><a href="https://lms-education.blogspot.com/2020/06/dele-c1.html">DELE C1考试经验+各部分流程+准备建议</a></div>
-<div class="item-snippet">
-</div>
-</div>
-<div style="clear: both;"></div>
-</li>
-</ul>
-<div class="clear"></div>
-</div>
-</div><div class="widget BlogArchive" data-version="1" id="BlogArchive2">
-<h2>Archive</h2>
-<div class="widget-content">
-<div id="ArchiveList">
-<div id="BlogArchive2_ArchiveList">
-<ul class="flat">
-<li class="archivedate">
-<a href="https://lms-education.blogspot.com/2020/06/">June</a> (7)
-                                            </li>
-<li class="archivedate">
-<a href="https://lms-education.blogspot.com/2020/05/">May</a> (18)
-                                            </li>
-<li class="archivedate">
-<a href="https://lms-education.blogspot.com/2019/08/">August</a> (9)
-                                            </li>
-<li class="archivedate">
-<a href="https://lms-education.blogspot.com/2019/07/">July</a> (7)
-                                            </li>
-</ul>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-</div></div>
-<div class="col-md-6 col-lg-4 section" id="footer-2" name="Footer 2"><div class="widget HTML" data-version="1" id="HTML1">
-<h2 class="title">Latest courses</h2>
-<div class="widget-content">
-3-tag:Courses-65px
-</div>
-<div class="clear"></div>
-</div><div class="widget Label" data-version="1" id="Label2">
-<h2>Categories</h2>
-<div class="widget-content cloud-label-widget-content">
-<span class="label-size label-size-5">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Blog">Blog</a>
-</span>
-<span class="label-size label-size-4">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Campus">Campus</a>
-</span>
-<span class="label-size label-size-5">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Courses">Courses</a>
-</span>
-<span class="label-size label-size-4">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Open%20Source">Open Source</a>
-</span>
-<span class="label-size label-size-3">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Python">Python</a>
-</span>
-<span class="label-size label-size-5">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Spanish">Spanish</a>
-</span>
-<span class="label-size label-size-3">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Testimonials">Testimonials</a>
-</span>
-<span class="label-size label-size-1">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/Videos">Videos</a>
-</span>
-<span class="label-size label-size-4">
-<a dir="ltr" href="https://lms-education.blogspot.com/search/label/WordPress">WordPress</a>
-</span>
-<div class="clear"></div>
-</div>
-</div></div>
-<div class="col-md-6 col-lg-4 section" id="footer-3" name="Footer 3"><div class="widget HTML" data-version="1" id="HTML63">
-<h2 class="title">Comments</h2>
-<div class="widget-content">
-3-comments
-</div>
-<div class="clear"></div>
-</div><div class="widget Text" data-version="1" id="Text19">
-<h2 class="title">About</h2>
-<div class="widget-content">
-This just a demo text widget, you can use it to create an about text, for example.
-</div>
-<div class="clear"></div>
-</div><div class="widget Image" data-version="1" id="Image19">
-<div class="widget-content">
-<a href="https://btemplates.com/2020/blogger-template-lms-education/">
-<img alt="" height="36" id="Image19_img" src="//1.bp.blogspot.com/-cfPfKMfUBPQ/XrlAoqevfBI/AAAAAAAAJgQ/4vLaxq9InJIARyaR7LqLmi5Ev0dhVhSNACK4BGAYYCw/s1600/logo.png" width="253"/>
-</a>
-<br/>
-</div>
-<div class="clear"></div>
-</div></div>
-</div>
-</div>
-</div>
-</body>
-</html>
